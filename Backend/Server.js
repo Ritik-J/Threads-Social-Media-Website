@@ -11,12 +11,16 @@ import postRoutes from "./Routes/postRoutes.js";
 import messageRoutes from "./Routes/messageRoutes.js";
 import { app, server } from "./Socket/socket.js";
 import path from "path";
+import job from "./Cron/cron.js";
 
 //env config
 dotenv.config();
 
 //mongodb connection
 ConnectDB();
+
+//cron job
+job.start();
 
 const PORT = process.env.PORT || 5000;
 
