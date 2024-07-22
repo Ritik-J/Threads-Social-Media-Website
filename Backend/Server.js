@@ -45,11 +45,11 @@ app.use("/api/messages", messageRoutes);
 //for running both backend and frontend at same url = localhost 5000
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "/frontend/dist")));
+  app.use(express.static(path.join(__dirname, "/Frontend/dist")));
 
   // react app
   app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(__dirname, "Frontend", "dist", "index.html"));
   });
 }
 
