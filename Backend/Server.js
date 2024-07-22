@@ -5,7 +5,7 @@ import cookieParser from "cookie-parser";
 import { v2 as cloudinary } from "cloudinary";
 
 //files
-import ConnectDB from "./Database/Connectdb.js";
+import ConnectDB from "./Database/connectDb.js";
 import userRoutes from "./Routes/userRoutes.js";
 import postRoutes from "./Routes/postRoutes.js";
 import messageRoutes from "./Routes/messageRoutes.js";
