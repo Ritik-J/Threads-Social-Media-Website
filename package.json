@@ -2,10 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "Server.js",
   "scripts": {
-    "dev": " cross-env NODE_ENV=development nodemon Backend/server.js",
-    "start": "cross-env NODE_ENV=production node Backend/server.js",
+    "dev": " cross-env NODE_ENV=development nodemon Backend/Server.js",
+    "start": "cross-env NODE_ENV=production node Backend/Server.js",
     "build": "npm install && npm install --prefix Frontend && npm run build --prefix Frontend"
   },
   "type": "module",
