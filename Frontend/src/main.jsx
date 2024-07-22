@@ -33,7 +33,6 @@ const theme = extendTheme({ config, styles, colors });
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   //in devlopment strictmode render evert component twice in production it will work fine
-  // <React.StrictMode>
   <RecoilRoot>
     <BrowserRouter>
       <ChakraProvider theme={theme}>
@@ -44,5 +43,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       </ChakraProvider>
     </BrowserRouter>
   </RecoilRoot>
-  // </React.StrictMode>
 );
